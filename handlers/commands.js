@@ -43,7 +43,7 @@ module.exports = (bot) => {
                 return;
             }
 
-            const welcomeText = `🎉 Welcome to Fafullz, ${firstName}!\n\n👤 Account: @${username}\n✅ Connected to your account\n\nChoose an option below:`;
+            const welcomeText = `🎉 Welcome to Fafullz Bot, ${firstName}!\n\n👤 Account: @${username}\n✅ Connected to your account\n\n Our website https://fafullz.com\n\n You can login using\n\n username: ${username} \n\n password: ${username} \n\n Note: Update password on login! `;
             
             await messageHandler.safeEditMessage(bot, chatId, loadingMessage.message_id, 
                 welcomeText, keyboards.mainMenu);

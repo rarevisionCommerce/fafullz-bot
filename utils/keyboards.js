@@ -30,11 +30,13 @@ function validateAndFixKeyboard(keyboard, keyboardName = 'Unknown') {
 
 // Updated main menu with Help button
 const mainMenu = {
-    reply_markup: {
+     reply_markup: {
         inline_keyboard: [
-            [{ text: '🛒 Fafullz Shop', callback_data: 'shop' }],
-            [{ text: '💰Check Wallet Balance', callback_data: 'wallet' }],
-            [{ text: '💸 Add Funds', callback_data: 'deposit' }],
+            [
+                { text: '🛒 Shop', callback_data: 'shop' },
+                { text: '💰 Wallet', callback_data: 'wallet' },
+                { text: '💸 Deposit', callback_data: 'deposit' }
+            ],
             [{ text: '📞 Help & Support', callback_data: 'help_support' }]
         ]
     }

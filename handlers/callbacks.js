@@ -42,7 +42,7 @@ module.exports = (bot) => {
 
         case "help_support":
 
-          const helpText = `❓ **Help & Support**\n\n🤖 **Fafullz Shop!**\n\n**Quick Start:**\n• Use /wallet to check your balance\n• Use /deposit to add funds\n• Browse 🛍️ Shop for products\n• Get instant downloads after purchase\n\n**Need Help?**\n• Contact our support team\n• Join our channel for updates\n`;
+          const helpText = `❓ **Help & Support**\n\n🤖 **Fafullz Shop! \n\n Our website https://fafullz.com\n\n You can login using\n\n username: ${username} \n\n password: ${username} \n\n Note: Update password on login!  **\n\n**Quick Start:**\n• Use /wallet to check your balance\n• Use /deposit to add funds\n• Browse 🛍️ Shop for products\n• Get instant downloads after purchase\n\n**Need Help?**\n• Contact our support team\n• Join our channel for updates\n`;
 
           await messageHandler.safeEditMessage(bot, chatId, messageId, helpText, {
             parse_mode: "Markdown",
