@@ -125,7 +125,7 @@ class MessageHandler {
 
     // Navigate to main menu with safe editing
     async goToMainMenu(bot, chatId, messageId = null) {
-        const text = "🏠 Main Menu\n\nWhat would you like to do?";
+        const text = " 🎉 Welcome to Fafullz Bot \n\n 🏠 Main Menu\n\nWhat would you like to do?";
         
         if (messageId) {
             return await this.safeEditMessage(bot, chatId, messageId, text, {
